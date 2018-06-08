@@ -1,8 +1,29 @@
-\documentclass[12pt, a4paper]{report}
+\documentclass[a4paper,14pt,oneside,openany]{memoir}
 
 \usepackage[utf8]{inputenc}
 \usepackage[english, russian]{babel}
 
+\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float}
+
+\usepackage{geometry} %способ ручной установки полей
+\geometry{top=2cm} %поле сверху
+\geometry{bottom=2cm} %поле снизу
+\geometry{left=2cm} %поле справа
+\geometry{right=1cm} %поле слева
+
+\usepackage[colorlinks,linkcolor=blue]{hyperref}%гиперссылки в тексте
+\newcommand{\tocsecindent}{\hspace{7mm}}% отступ для введения
+
+
+% 1.5 интервала от нормального, эквивалентно
+\renewcommand{\baselinestretch}{1.24}
+
+
 \begin{document}
+    \tableofcontents
+
     \include{main}
+
+    \bibliographystyle{utf8gost705u}
+    \bibliography{biblio}
 \end{document}
