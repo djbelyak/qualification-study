@@ -1,3 +1,8 @@
-bin/ 
-biblio/*.bak
-biblio/*.sav
+*.log
+*.aux
+*.bbl
+*.blg
+*.lof
+*.lot
+*.out
+*.toc

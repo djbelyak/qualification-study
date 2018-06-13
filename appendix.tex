@@ -1,0 +1,370 @@
+\appendix
+
+\chapter{Примеры работы программного комплекса}
+
+\section{Сервис хранения порядка}\label{json:automata}
+
+Пример ответа на запрос curl GET api/automata/1:
+\begin{lstlisting}
+ {
+  "states": [
+    {
+      "data": "{\"size\": \"10\"}", 
+      "id": 1, 
+      "name": "q1"
+    }, 
+    {
+      "data": "{\"size\": \"20\"}", 
+      "id": 2, 
+      "name": "q2"
+    }, 
+    {
+      "data": "{\"size\": \"30\"}", 
+      "id": 3, 
+      "name": "q3"
+    }, 
+    {
+      "data": "{\"size\": \"40\"}", 
+      "id": 4, 
+      "name": "q4"
+    }
+  ], 
+  "start_state": {
+    "data": "{\"size\": \"10\"}", 
+    "id": 1, 
+    "name": "q1"
+  }, 
+  "end_states": [
+    {
+      "data": "{\"size\": \"20\"}", 
+      "id": 2, 
+      "name": "q2"
+    }, 
+    {
+      "data": "{\"size\": \"30\"}", 
+      "id": 3, 
+      "name": "q3"
+    }, 
+    {
+      "data": "{\"size\": \"40\"}", 
+      "id": 4, 
+      "name": "q4"
+    }
+  ], 
+  "transitions": [
+    {
+      "action": {
+        "data": "{\"time\": \"10\"}", 
+        "id": 1, 
+        "name": "n1"
+      }, 
+      "start": {
+        "data": "{\"size\": \"10\"}", 
+        "id": 1, 
+        "name": "q1"
+      }, 
+      "end": {
+        "data": "{\"size\": \"20\"}", 
+        "id": 2, 
+        "name": "q2"
+      }, 
+      "id": 1
+    }, 
+    {
+      "action": {
+        "data": "{\"time\": \"20\"}", 
+        "id": 2, 
+        "name": "n2"
+      }, 
+      "start": {
+        "data": "{\"size\": \"20\"}", 
+        "id": 2, 
+        "name": "q2"
+      }, 
+      "end": {
+        "data": "{\"size\": \"30\"}", 
+        "id": 3, 
+        "name": "q3"
+      }, 
+      "id": 2
+    }, 
+    {
+      "action": {
+        "data": "{\"time\": \"10\"}", 
+        "id": 1, 
+        "name": "n1"
+      }, 
+      "start": {
+        "data": "{\"size\": \"10\"}", 
+        "id": 1, 
+        "name": "q1"
+      }, 
+      "end": {
+        "data": "{\"size\": \"20\"}", 
+        "id": 2, 
+        "name": "q2"
+      }, 
+      "id": 3
+    }, 
+    {
+      "action": {
+        "data": "{\"time\": \"20\"}", 
+        "id": 2, 
+        "name": "n2"
+      }, 
+      "start": {
+        "data": "{\"size\": \"20\"}", 
+        "id": 2, 
+        "name": "q2"
+      }, 
+      "end": {
+        "data": "{\"size\": \"30\"}", 
+        "id": 3, 
+        "name": "q3"
+      }, 
+      "id": 4
+    }, 
+    {
+      "action": {
+        "data": "{\"time\": \"10\"}", 
+        "id": 1, 
+        "name": "n1"
+      }, 
+      "start": {
+        "data": "{\"size\": \"10\"}", 
+        "id": 1, 
+        "name": "q1"
+      }, 
+      "end": {
+        "data": "{\"size\": \"20\"}", 
+        "id": 2, 
+        "name": "q2"
+      }, 
+      "id": 5
+    }, 
+    {
+      "action": {
+        "data": "{\"time\": \"20\"}", 
+        "id": 2, 
+        "name": "n2"
+      }, 
+      "start": {
+        "data": "{\"size\": \"20\"}", 
+        "id": 2, 
+        "name": "q2"
+      }, 
+      "end": {
+        "data": "{\"size\": \"30\"}", 
+        "id": 3, 
+        "name": "q3"
+      }, 
+      "id": 6
+    }, 
+    {
+      "action": {
+        "data": "{\"time\": \"10\"}", 
+        "id": 1, 
+        "name": "n1"
+      }, 
+      "start": {
+        "data": "{\"size\": \"10\"}", 
+        "id": 1, 
+        "name": "q1"
+      }, 
+      "end": {
+        "data": "{\"size\": \"20\"}", 
+        "id": 2, 
+        "name": "q2"
+      }, 
+      "id": 7
+    }, 
+    {
+      "action": {
+        "data": "{\"time\": \"20\"}", 
+        "id": 2, 
+        "name": "n2"
+      }, 
+      "start": {
+        "data": "{\"size\": \"20\"}", 
+        "id": 2, 
+        "name": "q2"
+      }, 
+      "end": {
+        "data": "{\"size\": \"30\"}", 
+        "id": 3, 
+        "name": "q3"
+      }, 
+      "id": 8
+    }, 
+    {
+      "action": {
+        "data": "{\time\": \"40\"}", 
+        "id": 3, 
+        "name": "n3"
+      }, 
+      "start": {
+        "data": "{\"size\": \"10\"}", 
+        "id": 1, 
+        "name": "q1"
+      }, 
+      "end": {
+        "data": "{\"size\": \"40\"}", 
+        "id": 4, 
+        "name": "q4"
+      }, 
+      "id": 9
+    }, 
+    {
+      "action": {
+        "data": "{\"time\": \"10\"}", 
+        "id": 1, 
+        "name": "n1"
+      }, 
+      "start": {
+        "data": "{\"size\": \"10\"}", 
+        "id": 1, 
+        "name": "q1"
+      }, 
+      "end": {
+        "data": "{\"size\": \"20\"}", 
+        "id": 2, 
+        "name": "q2"
+      }, 
+      "id": 10
+    }, 
+    {
+      "action": {
+        "data": "{\"time\": \"20\"}", 
+        "id": 2, 
+        "name": "n2"
+      }, 
+      "start": {
+        "data": "{\"size\": \"20\"}", 
+        "id": 2, 
+        "name": "q2"
+      }, 
+      "end": {
+        "data": "{\"size\": \"30\"}", 
+        "id": 3, 
+        "name": "q3"
+      }, 
+      "id": 11
+    }, 
+    {
+      "action": {
+        "data": "{\time\": \"40\"}", 
+        "id": 3, 
+        "name": "n3"
+      }, 
+      "start": {
+        "data": "{\"size\": \"10\"}", 
+        "id": 1, 
+        "name": "q1"
+      }, 
+      "end": {
+        "data": "{\"size\": \"40\"}", 
+        "id": 4, 
+        "name": "q4"
+      }, 
+      "id": 12
+    }
+  ], 
+  "id": 1, 
+  "actions": [
+    {
+      "data": "{\"time\": \"10\"}", 
+      "id": 1, 
+      "name": "n1"
+    }, 
+    {
+      "data": "{\"time\": \"20\"}", 
+      "id": 2, 
+      "name": "n2"
+    }, 
+    {
+      "data": "{\time\": \"40\"}", 
+      "id": 3, 
+      "name": "n3"
+    }
+  ], 
+  "name": "test1"
+}
+\end{lstlisting}
+
+
+\section{Сервис расчета порядка}\label{json:pathfinder}
+
+Пример ответа на запрос curl POST api/pathfinder c запросом из \ref{json:automata}:
+\begin{lstlisting}
+ [
+    {
+        "length": 10, 
+        "path": [
+            "q1", 
+            "q2"
+        ]
+    }, 
+    {
+        "length": 30, 
+        "path": [
+            "q1", 
+            "q2", 
+            "q3"
+        ]
+    }, 
+    {
+        "length": 30, 
+        "path": [
+            "q1", 
+            "q4"
+        ]
+    }
+]
+
+\end{lstlisting}
+
+
+\chapter{Исходные коды программного комплекса} \label{sources}
+
+\section{Сервис хранения порядка}
+
+\subsection{Дескрипторы моделей}
+
+% \lstinputlisting[language=Python]{sources/app/automata/models.py}
+
+\subsection{REST-сервис}
+
+% \lstinputlisting[language=Python]{sources/app/automata/api.py}
+
+\section{Сервис расчета порядка}
+
+\subsection{Дескрипторы контроллера}
+
+% \lstinputlisting[language=Python]{sources/app/pathfinder/controller.py}
+
+\subsection{REST-сервис}
+
+% \lstinputlisting[language=Python]{sources/app/pathfinder/api.py}
+
+\section{Сервис моделирования состояния}
+
+\subsection{REST-сервис}
+
+% \lstinputlisting[language=Python]{sources/app/automata/api.py}
+
+\section{Утилиты}
+
+\subsection{Скрипт запуска приложения}
+
+% \lstinputlisting[language=Python]{sources/run.py}
+
+\subsection{Скрипты миграции базы данных}
+
+% \lstinputlisting[language=Python]{sources/db_create.py}
+
+% \lstinputlisting[language=Python]{sources/db_migrate.py}
+
+% \lstinputlisting[language=Python]{sources/db_upgrade.py}
+
+% \lstinputlisting[language=Python]{sources/db_downgrade.py}
+
