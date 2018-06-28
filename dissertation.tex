@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{report}
+\documentclass[a4paper,12pt]{extreport}
 
 \input{packages}		% Подключаемые пакеты
 \input{styles}			% Пользовательские стили
@@ -8,19 +8,22 @@
 \input{names}			% Переопределение именований
 
 \input{title}			% Титульный лист
-\input{abstract}		% Реферат
+%\input{abstract}		% Реферат
 \input{contents}		% Оглавление
-\input{introduction}	% Введение
-\input{part1}			% Глава 1
-\input{part2}			% Глава 2
-\input{approximation}
-\input{part3}			% Глава 3
-\input{part4}			% Глава 4
-\input{search}
-\input{part5}			% Глава 5
-\input{conclusion}		% Заключение
+
+\input{intro}
+
+\input{review}
+\input{automata-model}
+\input{path-search}
+\input{state-approximation}
+
+\input{outro}
+
+
 \input{lists}			% Списки таблиц и изображений
 \input{references}		% Список литературы
-\input{appendix}		% Приложения
+% \input{appendix}		% Приложения
+\input{code}
 
 \end{document}
